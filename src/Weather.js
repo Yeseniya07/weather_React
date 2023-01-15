@@ -30,6 +30,7 @@ export default function Weather() {
               placeholder="Type a city.."
               className="form-control"
               autoComplete="off"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
@@ -48,7 +49,7 @@ export default function Weather() {
           <li>{weatherData.description}</li>
         </ul>
       </div>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
           <div className="clearfix weather-temperature">
             <img
@@ -57,7 +58,7 @@ export default function Weather() {
               className="float-left"
             />
             <div className="float-left">
-              <strong>{weatherData.temperature}</strong>
+              <span className="temperature">{weatherData.temperature}</span>
               <span className="units">
                 <a href="/">°C</a> | <a href="/">°F</a>
               </span>
@@ -66,31 +67,12 @@ export default function Weather() {
         </div>
         <div className="col-6">
           <ul>
+            <li>Precipitation: 15%</li>
             <li>Humidity: {weatherData.humidity}%</li>
             <li>Wind: {weatherData.wind} km/h</li>
           </ul>
         </div>
       </div>
-
-      <br />
-      <p className="author">
-        This project was coded by{" "}
-        <a
-          href="https://magnificent-gnome-8f36bc.netlify.app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Alla Radkevych
-        </a>{" "}
-        and is{" "}
-        <a
-          href="https://github.com/Yeseniya07/weather_React"
-          target="_blank"
-          rel="noreferrer"
-        >
-          open-sourced on GitHub
-        </a>
-      </p>
     </div>
   );
 }

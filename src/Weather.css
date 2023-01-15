@@ -2,18 +2,33 @@
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  color: rgb(135, 135, 135);
+}
+
+.Weather .mb-3 {
+  margin-bottom: 20px;
 }
 
 .Weather .overview {
   margin-bottom: 20px;
 }
 
+.Weather .temperature {
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 400;
+  position: relative;
+  margin-left: 60px;
+  top: -64px;
+}
 .Weather .weather-temperature img {
   margin-right: 5px;
   height: 64px;
   width: 64px;
+  display: inline-block;
 }
-
 .Weather .weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
@@ -24,7 +39,8 @@
 .Weather .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -34px;
+  top: -98px;
+  margin-left: 5px;
 }
 
 .Weather .weather-temperature .active {
