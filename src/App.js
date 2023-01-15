@@ -4,8 +4,10 @@ import Weather from "./Weather";
 
 function App() {
   return (
-    <div>
-      <Weather />
+    <div className="App">
+      <div className="container">
+        <Weather />
+      </div>
     </div>
   );
 }
