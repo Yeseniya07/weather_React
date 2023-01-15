@@ -73,14 +73,22 @@ export default function Weather() {
 
       <br />
       <p className="author">
+        This project was coded by{" "}
+        <a
+          href="https://magnificent-gnome-8f36bc.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Alla Radkevych
+        </a>{" "}
+        and is{" "}
         <a
           href="https://github.com/Yeseniya07/weather_React"
           target="_blank"
           rel="noreferrer"
         >
-          Open-source code
+          open-sourced on GitHub
         </a>
-        by Alla
       </p>
     </div>
   );
