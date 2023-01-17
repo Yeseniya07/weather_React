@@ -9,13 +9,13 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      city: response.data.name,
-      temperature: response.data.main.temp,
+      city: response.data.city,
+      temperature: response.data.temperature.current,
       date: "Wednesday 07:00",
       wind: response.data.wind.speed,
-      humidity: response.data.main.humidity,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      description: response.data.weather[0].description,
+      humidity: response.data.temperature.humidity,
+      icon: response.data.condition.icon_url,
+      description: response.data.condition.description,
     });
   }
   if (weatherData.ready) {
@@ -52,7 +52,7 @@ export default function Weather(props) {
           <div className="col-6">
             <div className="clearfix weather-temperature">
               <img
-                src={weatherData.imgUrl}
+                src={weatherData.icon}
                 alt={weatherData.description}
                 className="float-left"
               />
