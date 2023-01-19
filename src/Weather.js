@@ -51,6 +51,7 @@ export default function Weather(props) {
                 className="form-control"
                 autoComplete="off"
                 autoFocus="on"
+                onChange={handleCityChange}
               />
             </div>
             <div className="col-3">
@@ -58,7 +59,6 @@ export default function Weather(props) {
                 type="submit"
                 value="Search"
                 className="btn btn-primary w-100"
-                onChange={handleCityChange}
               />
             </div>
           </div>
